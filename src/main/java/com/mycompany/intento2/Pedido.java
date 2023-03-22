@@ -11,15 +11,15 @@ import java.util.Date;
  * @author gabri
  */
 public class Pedido {
-      private int id;
+    private int id;
     private Date fecha;
-    private Proveedor proveedor;
+    private String estado_pedido;
     
     // constructor
-    public Pedido(int id, Date fecha, Proveedor proveedor) {
+    public Pedido(int id, Date fecha, String estado_pedido) {
         this.id = id;
         this.fecha = fecha;
-        this.proveedor = proveedor;
+        this.estado_pedido = estado_pedido;
     }
     
     // getters y setters
@@ -38,14 +38,16 @@ public class Pedido {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
-    
-    public Proveedor getProveedor() {
-        return proveedor;
+
+    public String getEstado_pedido() {
+        return estado_pedido;
+    }
+
+    public void setEstado_pedido(String estado_pedido) {
+        this.estado_pedido = estado_pedido;
     }
     
-    public void setProveedor(Proveedor proveedor) {
-        this.proveedor = proveedor;
-    }
+   
 }
   
 
