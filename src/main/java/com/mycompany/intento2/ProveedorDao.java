@@ -27,7 +27,8 @@ public class ProveedorDao {
             statement.setString(3, proveedor.getTelefono());
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println(e.toString());
+            
         }
     }
 
