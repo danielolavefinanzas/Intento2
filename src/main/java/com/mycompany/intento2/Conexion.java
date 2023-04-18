@@ -25,9 +25,9 @@ public class Conexion {
     }
     public  Connection getConnection() throws SQLException {
         // Definir los datos de conexión
-        String url = "jdbc:mysql://localhost:3306/proyecto1";
+        String url = "jdbc:mysql://localhost:3306/test";
         String user = "root";
-        String password = "1234";
+        String password = "";
 
         // Cargar el driver JDBC
         try {
